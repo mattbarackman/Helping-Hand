@@ -30,11 +30,11 @@ class DictProperty(db.Property):
     return value is None 
   
 class User(db.Model):
-    user = db.UserProperty(required=True)
-    user_id = db.StringProperty(required=True)
+    username = db.StringProperty()
     email = db.EmailProperty()
-    location = db.StringProperty()
-    age = db.IntegerProperty()
+    password = db.StringProperty()
+    zipcode = db.IntegerProperty()
+    role = db.StringProperty()
     care_profile = db.ReferenceProperty()
 
 class CareProfile(db.Model):

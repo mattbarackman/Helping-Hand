@@ -62,57 +62,44 @@
 		<div class="container" style="margin-top: 130px">			
       <div class="row">
 				<div class="span12">
-					<h1>Sign up!</h1>
-					</br>
+					<h1>Thanks for signing up!</h1>
 				</div>
+				<h5 class="span6" style="margin-top: 10px">On the next few pages we will ask you to share more about your specific needs. This will allow us to better match you with the in-home care providers that will best serve you.Don't worry, we will keep the specifics of your needs confidential.
+				</h5>
 			</div>
-			<div class="row">		
 		</div>
-		
+	</br>
 		<div class="container">
 			<form class="form-horizontal" action="/signup" method="post">
 				<fieldset>
-					<legend>User Info</legend>
+					<legend>Required Care</legend>
 					
 					<div class="control-group">
-						<label class="control-label" for="firstname"> Username </label>
-						<div class="controls">
-							<div class"input-xlarge"> <input type="text" id="id_username" name="username"></div>
-							<p class="help-block"></p>
-						</div>
-					
-					<div class="control-group">
-						<label class="control-label" for="lastname"> E-mail </label>
-						<div class="controls">
-							<div class"input-xlarge"> <input type="text" id="id_email" name="email"></div>
-							<p class="help-block"></p>
-						</div>
-
-					<div class="control-group">
-						<label class="control-label" for="lastname"> Password </label>
-						<div class="controls">
-							<div class"input-xlarge"> <input type="text" id="id_password" name="password"></div>
-							<p class="help-block"></p>
-						</div>
-
-					<div class="control-group">
-						<label class="control-label" for="zipcode"> Zipcode </label>
-						<div class="controls">
-							<div class"input-xlarge"> <input type="integer" id="id_zipcode" name="zipcode"></div>
-							<p class="help-block"></p>
-						</div>
-
-						<div class="control-group">
-	            <label class="control-label" for="role">Select Role</label>
+	            <label class="control-label" for="requiredcare">Check all that apply</label>
 	            <div class="controls">
-	              <select id="id_role" name="role">
-	                <label> Please select your roll </label>
-									<option>Client</option>
-	                <option>Care provider</option>
-	              </select>
+	              <label class="checkbox">
+	                <input type="checkbox" id="id_requiredcare" name="requiredcare" value="option1">
+	                Meal Preparation
+	              </label>
+	              <label class="checkbox">
+	                <input type="checkbox" id="id_requiredcare" name="requiredcare" value="option2">
+	                Tidying Up
+	              </label>
+	              <label class="checkbox">
+	                <input type="checkbox" id="id_requiredcare" name="requiredcare" value="option2">
+									Bathing
+	              </label>	
+	              <label class="checkbox">
+	                <input type="checkbox" id="id_requiredcare" name="requiredcare" value="option2">
+									Overnight
+	              </label>
+	              <label class="checkbox">
+	                <input type="checkbox" id="id_requiredcare" name="requiredcare" value="option2">
+									Bowel Care
+	              </label>			
 	            </div>
 	          </div>
-						
+
 					<div class="form-actions">
             <button type="submit" class="btn btn-primary">Save changes</button>
             <button class="btn">Cancel</button>
